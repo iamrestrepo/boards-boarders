@@ -3,8 +3,7 @@
 ## App's core in starting phase 
 
  ### CLIENT folder : 
-    - index.js [Entry point for client JS]
-
+    - index.jsx [Entry point for client JS ]
 
 ### node_modules folder : 
     - All packages and dependencies necessary for a basic functionality 
@@ -24,7 +23,4 @@
 ### .gitignore 
 
     - [Allows git to ignore npm libraries and very large dependencies during commits] 
-
-### index.html 
-
-    - [HTML's main landing page]
+  
