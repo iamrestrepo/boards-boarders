@@ -24,7 +24,3 @@
 ### .gitignore 
 
     - [Allows git to ignore npm libraries and very large dependencies during commits] 
-
-### index.html 
-
-    - [HTML's main landing page]
