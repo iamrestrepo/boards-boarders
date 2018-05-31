@@ -1,0 +1,27 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Basic full-stack's app boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"mocha ./tests/*.spec.js --compilers js:babel-register\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamrestrepo/biolerPlate.git"
+  },
+  "keywords": [
+    "boilerPlate",
+    "boiler",
+    "fullStack",
+    "full",
+    "stack",
+    "app"
+  ],
+  "author": "imrestrepo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamrestrepo/biolerPlate/issues"
+  },
+  "homepage": "https://github.com/iamrestrepo/biolerPlate#readme"
+}
