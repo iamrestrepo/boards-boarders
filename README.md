@@ -1,12 +1,10 @@
-#Basic full-Stack application boilerplate
+# Basic full-Stack application boilerplate
 
-##App's core in starting phase 
+## App's core in starting phase 
 
- ### APP folder : 
-    - Main.js  [Renders root component at first]
-    - Components folder  > root.js  [Our UI part of the app/react]
-    - Reducers folder  >   index.js  [Where our actions to change state will be generated]
-    - store.js  [Where most of the app's components' state is managed from] 
+ ### CLIENT folder : 
+    - index.js [Entry point for client JS]
+
 
 ### node_modules folder : 
     - All packages and dependencies necessary for a basic functionality 
@@ -20,5 +18,13 @@
 
 ### SERVER folder: 
 
-    - Api folder > index.js [Initial app's route. Where first http request are taken to]
-    - DB folder >  index.js [Db connection ]
+    - index.js [Entry point for server JS]
+    - api folder [where all my back-end-routes are located] 
+
+### .gitignore 
+
+    - [Allows git to ignore npm libraries and very large dependencies during commits] 
+
+### index.html 
+
+    - [HTML's main landing page]
