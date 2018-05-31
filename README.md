@@ -23,4 +23,3 @@
 ### .gitignore 
 
     - [Allows git to ignore npm libraries and very large dependencies during commits] 
-  
