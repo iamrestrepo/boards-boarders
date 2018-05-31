@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
+const path = require("path");
 const apiRoutes = require("./api");
 
 //logging middleware
@@ -29,4 +30,5 @@ const port = process.env.PORT || 3000; // this can be very useful if you deploy 
 app.listen(port, function() {
   console.log(`App listening on port ${port}`);
 });
-module.exports = router;
+
+module.exports = app;
