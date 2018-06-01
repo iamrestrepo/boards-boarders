@@ -7,7 +7,7 @@
     "test": "\"mocha ./tests/*.spec.js --compilers js:babel-register\"",
     "precommit": "lint-staged",
     "start": "node server/start",
-    "start-dev": "webpack -w & nodemon server"
+    "start-dev": "webpack -w & nodemon server/start"
   },
   "lint-staged": {
     "*.js": [
@@ -51,6 +51,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "chalk": "^2.4.1",
+    "connect-session-sequelize": "^5.2.1",
     "css-loader": "^0.28.11",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
