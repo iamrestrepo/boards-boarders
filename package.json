@@ -6,7 +6,7 @@
   "scripts": {
     "test": "\"mocha ./tests/*.spec.js --compilers js:babel-register\"",
     "precommit": "lint-staged",
-    "start": "node server",
+    "start": "node server/start",
     "start-dev": "webpack -w & nodemon server"
   },
   "lint-staged": {
@@ -43,17 +43,30 @@
     "babel-preset-react": "^6.24.1",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.2",
+    "redux-devtools-extension": "^2.13.2",
     "webpack": "^4.10.2",
     "webpack-cli": "^2.1.4"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
+    "chalk": "^2.4.1",
+    "css-loader": "^0.28.11",
     "express": "^4.16.3",
+    "express-session": "^1.15.6",
     "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
     "prettier": "^1.13.3",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-router-dom": "^4.2.2"
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sequelize": "^4.37.10",
+    "style-loader": "^0.21.0"
   }
 }

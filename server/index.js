@@ -25,10 +25,4 @@ app.use((req, res, next) => {
   res.status(err.status || 500).send(err.message || "internal server error.");
 });
 
-const port = process.env.PORT || 3000; // this can be very useful if you deploy to Heroku!
-
-app.listen(port, function() {
-  console.log(`App listening on port ${port}`);
-});
-
 module.exports = app;
