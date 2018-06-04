@@ -4,7 +4,7 @@
   "description": "Basic full-stack's app boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "\"mocha ./tests/*.spec.js --compilers js:babel-register\"",
+    "test": "mocha ./client/tests/*.spec.js --watch --compilers js:babel-register",
     "precommit": "lint-staged",
     "start": "node server/start",
     "start-dev": "webpack -w & nodemon server/start"
@@ -50,9 +50,12 @@
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.2",
     "chalk": "^2.4.1",
     "connect-session-sequelize": "^5.2.1",
     "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "morgan": "^1.9.0",
@@ -68,6 +71,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "sequelize": "^4.37.10",
+    "sinon": "^5.0.10",
     "style-loader": "^0.21.0"
   }
 }

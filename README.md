@@ -6,6 +6,8 @@
     - index.jsx [Entry point for client JS ]
     - reducers folder [where the action that modify our store' status are created ad take place]
     - store [Where our state is being managed from]
+    - tests folder [where our client-side specs will be]
+    
 
 ### node_modules folder : 
     - All packages and dependencies necessary for a basic functionality 
