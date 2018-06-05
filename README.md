@@ -28,7 +28,10 @@
 
     -react.spec.js [tests components]
     -redux.spec.js [tests redux]
-    -routes.spec.js [tests api-routes]
+    -routes.spec.js [tests express api-routes]
+    -models.spec.js [tests seuqelize models]
+    
+
 
 ### .gitignore 
 
