@@ -2,7 +2,7 @@ import { expect } from "chai";
 import { createStore } from "redux";
 
 //import functions
-import reducer from "../reducers/root";
+import reducer from "../client/reducers/root";
 
 describe(" :: REDUX :: Testing connected components", () => {
   it("sets error message when trying to save empty title", () => {

@@ -4,7 +4,7 @@
   "description": "Basic full-stack's app boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./client/tests/*.spec.js --watch --compilers js:babel-register",
+    "test": "mocha ./tests/*.spec.js --watch --compilers js:babel-register",
     "precommit": "lint-staged",
     "start": "node server/start",
     "start-dev": "webpack -w & nodemon server/start"

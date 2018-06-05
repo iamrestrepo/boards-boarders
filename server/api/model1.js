@@ -4,6 +4,7 @@ const router = require("express").Router();
 
 // matches GET requests to /api/model1/
 router.get("/", function(req, res, next) {
+  res.json("Got request successfully!");
   /* etc */
 });
 // matches POST requests to /api/model1/

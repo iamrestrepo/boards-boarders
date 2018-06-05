@@ -6,8 +6,6 @@
     - index.jsx [Entry point for client JS ]
     - reducers folder [where the action that modify our store' status are created ad take place]
     - store [Where our state is being managed from]
-    - tests folder [where our client-side specs will be]
-    
 
 ### node_modules folder : 
     - All packages and dependencies necessary for a basic functionality 
@@ -25,6 +23,12 @@
     - api folder [where all my back-end-routes are located] 
     - database folder [where database is connecting from and the models for it live]
     - start.js [initializes and syncs database]
+
+### TESTS folder 
+
+    -react.spec.js [tests components]
+    -redux.spec.js [tests redux]
+    -routes.spec.js [tests api-routes]
 
 ### .gitignore 
 

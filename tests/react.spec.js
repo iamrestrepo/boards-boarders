@@ -9,7 +9,7 @@ Enzyme.configure({ adapter });
 
 // import components to be test here
 
-import Main from "../components/Main";
+import Main from "../client/components/Main";
 
 describe(" :: React :: components", () => {
   let shallowComponent;
