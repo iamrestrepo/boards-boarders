@@ -2,9 +2,9 @@
 
 ## What is this? 
 
-This is a RESTful web platform that allows board makers to manage their boards and the boarders who use them. 
+This is a RESTful web platform that allows board makers and surfers/snowboarders to manage their boards. 
 
-The app uses Sequelize, Express and React as its primary but not exclusive tools. 
+The app uses Sequelize, Express and React as its primary but not exclusive set of tools. 
 
 
 ### Functionality 
@@ -14,24 +14,20 @@ The app uses Sequelize, Express and React as its primary but not exclusive tools
 ```
   - Board makers are able to  
 
-Create / Input new boards in the database.
-Read / Retrieve boards from the database.
-Update / Modify information about a board in the database.
-Delete a board from the database. 
-
- - Aditionally 
-
- Board makers are able to display their "top 5 riders" on a board's page
+CREATE / Input new boards in the database.
+READ / Retrieve boards from the database.
+    Board makers are able to display their "top 5 riders" on a board's page.
+UPDATE / Modify information about a board in the database.
+DELETE a board from the database. 
 
 ``` 
 
+```
   - Boarders are be able to  
 
-Look at their own profile (which includes ISA ranking, Last tournament won, Country , favorite wave , current board)
-Look up boards by maker or name 
-Select / Add boards to their own profile
-Update their current board
-Select their favorite boards from their selected ones
-Update comments on selected boards inside their profile
-Delete boards from their favorite boards list
+CREATE / profile (w/ISA ranking, Last tournament won, Country , favorite wave , current board).
+READ / profile's information, boards by maker or name. 
+UPDATE /  boards to profile, current board, favorite boards from their selected ones , comments on selected boards.
+DELETE /  boards from their favorite boards' list.
 
+```
