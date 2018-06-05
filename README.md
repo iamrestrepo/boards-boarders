@@ -1,38 +1,37 @@
-# Basic full-Stack application boilerplate
+# Boards to surfers/snowboarders
 
-## App's core in starting phase 
+## What is this? 
 
- ### CLIENT folder : 
-    - index.jsx [Entry point for client JS ]
-    - reducers folder [where the action that modify our store' status are created ad take place]
-    - store [Where our state is being managed from]
+This is a RESTful web platform that allows board makers to manage their boards and the boarders who use them. 
 
-### node_modules folder : 
-    - All packages and dependencies necessary for a basic functionality 
-
-### PUBLIC folder: 
-    - bundle.js  [Bundling all inter-dependent js files in the correct order]
-    - bundle.js.map [Basically, it maps bundle.js' combined/minified file back to an unbuilt state]
-    - favicon [The icon at the title of your page on the browser's tab]
-    - index.html [official html landing page]
-    - style.css [css styling]
-
-### SERVER folder: 
-
-    - index.js [Entry point for server JS]
-    - api folder [where all my back-end-routes are located] 
-    - database folder [where database is connecting from and the models for it live]
-    - start.js [initializes and syncs database]
-
-### TESTS folder 
-
-    -react.spec.js [tests components]
-    -redux.spec.js [tests redux]
-    -routes.spec.js [tests express api-routes]
-    -models.spec.js [tests seuqelize models]
-    
+The app uses Sequelize, Express and React as its primary but not exclusive tools. 
 
 
-### .gitignore 
+### Functionality 
 
-    - [Allows git to ignore npm libraries and very large dependencies during commits] 
+ At its very basic, Boards & boarders satisfies the basic functions of persistent storage, CRUD. 
+
+```
+  - Board makers are able to  
+
+Create / Input new boards in the database.
+Read / Retrieve boards from the database.
+Update / Modify information about a board in the database.
+Delete a board from the database. 
+
+ - Aditionally 
+
+ Board makers are able to display their "top 5 riders" on a board's page
+
+``` 
+
+  - Boarders are be able to  
+
+Look at their own profile (which includes ISA ranking, Last tournament won, Country , favorite wave , current board)
+Look up boards by maker or name 
+Select / Add boards to their own profile
+Update their current board
+Select their favorite boards from their selected ones
+Update comments on selected boards inside their profile
+Delete boards from their favorite boards list
+
