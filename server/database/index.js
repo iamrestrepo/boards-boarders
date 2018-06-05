@@ -1,13 +1,20 @@
 "use strict";
 
 const db = require("./db");
-const model1 = require("./model1");
-const model2 = require("./model2");
+const Board = require("./board");
+const Boarder = require("./boarder");
+const Maker = require("./maker");
 
 // Assosiations go here
+Maker.hasMany(Board);
+Board.belongsTo(Maker);
+Board.belongsTo(Boarder);
+Boarder.hasMany(Board);
+// Board.belongsToMany(Boarder, { through: 'BoarderBoard' });
 
 module.exports = {
   db,
-  model1,
-  model2
+  Board,
+  Boarder,
+  Maker
 };

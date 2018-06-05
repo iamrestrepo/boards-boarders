@@ -1,13 +1,14 @@
 {
-  "name": "boilerplate",
+  "name": "board-boarders",
   "version": "1.0.0",
-  "description": "Basic full-stack's app boilerplate",
+  "description": "RESTful web app for boards-boarders",
   "main": "index.js",
   "scripts": {
     "test": "mocha ./tests/*.spec.js --watch --compilers js:babel-register",
     "precommit": "lint-staged",
     "start": "node server/start",
-    "start-dev": "webpack -w & nodemon server/start"
+    "start-dev": "webpack -w & nodemon server/start",
+    "seed": "node ./server/database/seed.js"
   },
   "lint-staged": {
     "*.js": [

@@ -23,9 +23,9 @@ DELETE a board from the database.
 ``` 
 
 ```
-  - Boarders are be able to  
+  - Boarders are able to  
 
-CREATE / profile (w/ISA ranking, Last tournament won, Country , favorite wave , current board).
+CREATE / profile (w/WSA ranking, Last tournament won, Country , favorite wave , current board).
 READ / profile's information, boards by maker or name. 
 UPDATE /  boards to profile, current board, favorite boards from their selected ones , comments on selected boards.
 DELETE /  boards from their favorite boards' list.
