@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, "../public")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // The “extended” syntax allows for rich objects and arrays to be encoded into the URL-encoded format
 
-app.use("api", apiRoutes);
+app.use("/api", apiRoutes);
 
 app.use(
   session({

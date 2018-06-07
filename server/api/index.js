@@ -1,7 +1,8 @@
 const router = require("express").Router();
 
-router.use("/model1", require("./model1")); // matches all requests to /api/model1/
-router.use("/model2", require("./model2"));
+router.use("/rider", require("./rider")); // matches all requests to /api/model1/
+router.use("/board", require("./board"));
+router.use("/maker", require("./maker"));
 
 //404's
 

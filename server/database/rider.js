@@ -2,7 +2,7 @@ const db = require("./db");
 const Sequelize = require("sequelize");
 
 //(w / WSL ranking, Last tournament won, Country, favorite wave, current board).
-const Boarder = db.define("boarder", {
+const Rider = db.define("rider", {
   name: {
     type: Sequelize.STRING,
     allowNull: false
@@ -27,4 +27,4 @@ const Boarder = db.define("boarder", {
   // and all fields tha we want our model to have
 });
 
-module.exports = Boarder;
+module.exports = Rider;
