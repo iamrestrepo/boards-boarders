@@ -4,7 +4,6 @@ const router = require("express").Router();
 const { Board } = require("../database/index");
 const asyncHandler = require("express-async-handler");
 
-// matches GET requests to /api/model2/
 router.get("/", async (req, res, next) => {
   try {
     const allBoards = await Board.findAll({});
@@ -23,22 +22,31 @@ router.get("/:boardId", async (req, res, next) => {
     next(err);
   }
 });
-// matches POST requests to /api/model2/
 router.post(
   "/",
   asyncHandler(async (req, res, next) => {
     const newRecord = await Board.create(req.body);
-    console.log(newRecord);
     res.send(newRecord);
   })
 );
-// matches PUT requests to /api/model2/:modelId
-router.put("/:puppyId", function(req, res, next) {
-  /* etc */
-});
-// matches DELTE requests to /api/model2/:modelId
-router.delete("/:puppyId", function(req, res, next) {
-  /* etc */
-});
+router.put(
+  "/:boardId",
+  asyncHandler(async (req, res, next) => {
+    const board = await Board.findById(req.params.boardId);
+    board.update(req.body);
+    res
+      .status(200)
+      .send(`${board.name}'s information has been successfully updated`);
+  })
+);
+router.delete(
+  "/:boardId",
+  asyncHandler(async (req, res, next) => {
+    const id = req.params.boardId;
+    const board = await Board.findById(id);
+    await Board.destroy({ where: { id } });
+    res.send(`${board.name} has been successfully deleted from the database`);
+  })
+);
 
 module.exports = router;

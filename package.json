@@ -73,6 +73,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "sequelize": "^4.37.10",
+    "short-url": "0.0.1",
     "sinon": "^5.0.10",
     "style-loader": "^0.21.0"
   }

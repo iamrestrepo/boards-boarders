@@ -23,14 +23,26 @@ router.get(
   })
 );
 
-router.post("/", function(req, res, next) {
-  /* etc */
+//add new rider to database
+router.post("/", async (req, res, next) => {
+  const newRider = await Rider.create(req.body);
+  res.json(`${newRider.name} has been successfully added to the database`);
 });
-router.put("/:puppyId", function(req, res, next) {
-  /* etc */
+
+// edit rider's info
+router.put("/:riderId", async (req, res, next) => {
+  const riderId = req.params.riderId;
+  const rider = await Rider.findById(riderId);
+  const updatedRider = await rider.update(req.body);
+  res.status(200).send(`${updatedRider.name}'s information has been updated`);
 });
-router.delete("/:puppyId", function(req, res, next) {
-  /* etc */
+
+//delete a rider
+router.delete("/:riderId", async (req, res, next) => {
+  const id = req.params.riderId;
+  const rider = await Rider.findById(id);
+  await rider.destroy({ where: { id } });
+  res.send(`${rider.name} has been successfully deleted from the database`);
 });
 
 module.exports = router;
