@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Switch } from "react-router-dom";
 
 export default class Main extends Component {
   constructor() {
@@ -7,6 +8,6 @@ export default class Main extends Component {
   }
 
   render() {
-    return <h1> Simple title </h1>;
+    return <h1> Boards and Riders </h1>;
   }
 }

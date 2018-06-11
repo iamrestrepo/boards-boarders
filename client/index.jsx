@@ -3,10 +3,14 @@ import "../public/style.css";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import store from "./store.js";
+import Main from "./components/Main.jsx";
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
   <Provider store={store}>
-    <div>Boards and Boarders!!</div>
+    <HashRouter>
+      <Main />
+    </HashRouter>
   </Provider>,
   document.getElementById("app")
 );
