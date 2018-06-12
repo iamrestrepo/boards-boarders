@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { goGetBoardsFromServer } from "../reducers/boardReducer";
 import DisplayInfoAsList from "../presentationalComponents/DisplayInfoAsList.jsx";
+
 export class Board extends Component {
   componentDidMount() {
     this.props.getBoards();

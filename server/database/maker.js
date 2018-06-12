@@ -10,7 +10,7 @@ const Maker = db.define(
     },
     state: Sequelize.STRING,
     bestAt: Sequelize.STRING,
-    logo: {
+    img: {
       type: Sequelize.TEXT,
       defaultValue:
         "/Users/moniquerz/Documents/FULLSTACK/JUNIOR/week8-selfStudy/boards-boarders/public/images/imgNotFound.png"
