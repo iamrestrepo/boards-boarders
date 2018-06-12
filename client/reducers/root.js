@@ -1,7 +1,12 @@
-const initialState = {};
+import { combineReducers } from "redux";
+import boardReducer from "./boardReducer";
+import makerReducer from "./makerReducer";
+import riderReducere from "./riderReducer";
 
-const rootReducer = (state = initialState, action) => {
-  return state;
-};
+const rootReducer = combineReducers({
+  boards: boardReducer,
+  makers: makerReducer,
+  riders: riderReducere
+});
 
 export default rootReducer;
