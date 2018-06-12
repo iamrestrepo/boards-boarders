@@ -3,7 +3,7 @@ import "../public/style.css";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import store from "./store.js";
-import Main from "./components/Main.jsx";
+import Main from "./presentationalComponents/Main.jsx";
 import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(

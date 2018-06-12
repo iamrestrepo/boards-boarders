@@ -1,6 +1,13 @@
-.main-wrapper {
+
+/* whole app container */
+.main-container {
   -webkit-flex: 1; /* Safari 6.1+ */
   -ms-flex: 1; /* IE 10 */ 
   flex: 1;
   border: 2px;
+}
+
+/* all-info container (excludes navbar anf footer) */
+.all-content-container{
+  
 }

@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Board from "./Board.jsx";
-import Rider from "./Rider.jsx";
-import Maker from "./Maker.jsx";
-import Navbar from "./basicComponents/Navbar.jsx";
+import Board from "../containerComponents/Board.jsx";
+import Rider from "../containerComponents/Rider.jsx";
+import Maker from "../containerComponents/Maker.jsx";
+import Navbar from "./Navbar.jsx";
 import LandingPage from "./LandingPage.jsx";
 
 export default class Main extends Component {
   render() {
     return (
-      <div className="main-wrapper">
+      <div className="main-container">
         <div>
           <Navbar />
         </div>
-        <div className="main-wrapper">
+        <div className="all-content-wrapper">
           <Switch>
             <Route path="/" exact component={LandingPage} location={location} />
             <Route exact path="/board" component={Board} />
