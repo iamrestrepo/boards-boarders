@@ -24,14 +24,14 @@ const boards = [
       "http://content.quiksilver.com/www/2014.quiksilver.com/html/upload/surf/surfboards/__id-35-5-MK11_front.jpg"
   },
   {
-    name: "MK12",
+    name: "Minibu",
     type: "surfboard",
     experience: "intermediate",
     conditions: "waist-head high",
     size: 5.1,
     year: 2018,
     img:
-      "http://content.quiksilver.com/www/2014.quiksilver.com/html/upload/surf/surfboards/__id-33-5-MK12_front.jpg"
+      "http://content.quiksilver.com/www/2014.quiksilver.com/html/upload/surf/surfboards/__id-65--8-minibu_front.jpg"
   },
   {
     name: "One bad egg",

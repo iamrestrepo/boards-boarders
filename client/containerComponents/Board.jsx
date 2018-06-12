@@ -11,9 +11,7 @@ export class Board extends Component {
     if (boards.length < 1) {
       return <h3>loading...</h3>;
     } else {
-      console.log("here it falls!");
-      console.log(this.props.boards);
-      return <p> {this.props.boards[1].name} </p>;
+      return <DisplayInfoAsList actualInfo={boards} />;
     }
   }
 }
