@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import DisplayInfoAsList from "../presentationalComponents/DisplayInfoAsList.jsx";
 import { goGetRidersFromServer } from "../reducers/riderReducer";
+import AddIcon from "@material-ui/icons/Add";
+import Button from "@material-ui/core/Button";
 
 export class Rider extends Component {
   componentDidMount() {
@@ -12,7 +14,14 @@ export class Rider extends Component {
     if (riders < 1) {
       return <h3>loading...</h3>;
     } else {
-      return <DisplayInfoAsList actualInfo={riders} />;
+      return (
+        <div>
+          <Button variant="fab" color="secondary">
+            <AddIcon />
+          </Button>
+          <DisplayInfoAsList actualInfo={riders} />
+        </div>
+      );
     }
   }
 }
